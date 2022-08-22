@@ -1,0 +1,63 @@
+.head{
+    text-align: center;
+    background-color:rgb(27, 22, 15);
+    font-weight: bold;
+    color:aliceblue;
+    font-size:32px;
+    font-weight: bold;
+    padding: 20px 0px;
+}
+/*
+    CSS display:inline-block
+    CSS Flexbox: 一組 CSS 關於排版的設定
+    CSS Grid
+
+    排版工具要解決的三個問題:
+    1. 如何左右排列區塊行標籤
+    2. 水平對齊
+    3. 垂直對齊
+
+*/
+.details{
+    background-color: #dddddd;
+    display:flex;
+    /* 水平對齊方式: flex-start, center , flex-end */
+    justify-content: center;
+    /* 允許內部的區塊，容器寬度不夠的時候往下排列 */
+    flex-wrap: wrap;
+}
+.box{
+    background-color: #aaaaaa;
+    width:250px;
+    margin: 20px;
+    text-align: center;
+    font-size:20px;
+}
+/* RWD 回應式設計的核心: CSS Media Query */
+@media (max-width:1280px){
+    /* 若螢幕的寬度小於 1280px，套用這個區塊中的 CSS 設定 */
+    .box{
+        width:45%;
+    }
+}
+@media (max-width:600px){
+    /* 若螢幕的寬度小於 600px，套用這個區塊中的 CSS 設定 */
+    .box{
+        width:90%;
+    }
+}
+
+.selected-tage{
+    text-decoration-style: none;
+}
+
+/*文章內文段落字體大小及顏色設定*/
+.text{
+    text-align: center;
+    word-break:normal;
+    display:block;
+    white-space:pre-wrap;
+    overflow:hidden;
+    color:#0066CC;
+    font-size:20px;
+}

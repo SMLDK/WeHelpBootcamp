@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeHelp 申請書-梅家康</title>
+    <link rel="stylesheet" type="text/css" href="wehelp-layout.css" />
+</head>
+<body>
+    <div class="head">WeHelp申請書-梅家康</div>
+    <div class="details">
+        <div class="box">
+            <h3
+                onmouseover="over(this);"
+                onmouseout="out(this);"
+                onclick="personal();"
+            >兩百字內的個人簡介。</h3>
+        </div>
+        <div class="box">
+            <h3 
+                onmouseover="over(this);"
+                onmouseout="out(this);"
+                onclick="effort();"
+            >為了成為軟體工程師，曾做過什麼努力？</h3>
+        </div>
+        <div class="box">
+            <h3 
+                onmouseover="over(this);"
+                onmouseout="out(this);"
+                onclick="plan();"
+            >如果參與這個計畫，會怎麼安排學習時間？</h3>
+        </div>
+        <div class="box">
+            <h3 
+                onmouseover="over(this);"
+                onmouseout="out(this);"
+                onclick="company();"
+            >是否有想要加入的軟體公司？為什麼想加入該公司？</h3>
+        </div>
+        <div class="box">
+            <h3 
+                onmouseover="over(this);"
+                onmouseout="out(this);"
+                onclick="matter();"
+            >請描述一件你曾經碰到最困難的事情，如何克服？</h3>
+        </div>
+        <div class="box">
+            <h3 
+                onmouseover="over(this);"
+                onmouseout="out(this);"
+                onclick="develop();"
+            >關於這份申請網頁，請分享一個你開發時的技術心得。</h3>
+        </div>
+    </div>
+    
+    <span id="personalprofile" class="text"><img style="width:12%" src="1468-1.jpg" />
+        【關於我】
+        我是梅家康，出生於台北，大學就讀文化大學機械工程學系，在規劃個人生涯上，並不侷限於同個領域，喜歡挑戰、學習不同技能，期許自己成為全方位的專才。
+
+        【個人經歷】
+        ．曾於西門子節能部擔任系統助理工程師。
+        　．獲得最佳員工獎。
+        　．獨力完成美國學校新增冷卻水塔系統工程案。
+        　．製作節能數據分析報告。
+        ．曾在貝登堡智能打工擔任講師及助教。
+        　．於國立臺灣科學教育館擔任樂高EV3機器人講師 。
+        　．樂高WEDO機器人講師。
+        　．動力機械講師。
+        　．東山高中附設國中部擔任108學期機器人性向課程老師。
+
+        【未來期望】 
+        學習更多前後端技術，往全端方向邁進，希望能成為優秀的軟體工程師。 
+    </span>
+    <span id="engineer" style="display: none;" class="text">
+        為了成為軟體工程師，自行在youtube上搜尋跟python相關的軟體教學跟買書自行觀看學習，
+        及報名一些軟體面授課程，如彭彭老師的javascript網頁前端入門課程。
+        
+    </span>
+    <span id="time" style="display: none;" class="text">
+        個人因近期復學去讀研究所(機械系研究所)，如果有幸參與此計畫，
+        學校的課為星期下午即星期三、四的下午，
+        所以原則上會固定安排星期一晚上即星期二、五兩天半的時間來完成每週作業，
+        其餘時間會安排每週至少10小時以上來學習提供的線上基礎教學影片，
+        同時兼顧學校課業並按時完成每週進度。
+        
+    </span>
+    <span id="software" style="display: none;" class="text">
+        夢想可以進入Google公司上班，因為看各個youtuber介紹公司的環境、待遇及福利都很吸引人讓人很嚮往。
+    </span>
+    <span id="overcome" style="display: none;" class="text">
+        曾碰過最困難的事，是在西門子工作的時候，有一次在執行美國學校的一個工程案件，
+        當時案件是要新增一座新的冷卻水塔及其監控系統，當要進入尾聲試車調整時，
+        水塔不知因何種原因沒有正常運作反而變成一個大型噴水池，而當時只有我一個人在負責此專案，
+        沒有任何的搭當跟我一起執行這個專案，當下我雖然因事發突然且錯愕，但我還是讓自己把持冷靜
+        迅速做出斷電動作並足一檢查所有的工程環節，當時現場只有我一個人沒有其他工人可以幫忙，公司的其他同事
+        也沒辦法趕到現場支援我，還好在當天最終我有保持鎮定並查到原因並向業主解釋，才順利的化解那一次的危機。
+
+    </span>
+    <span id="experience" style="display: none;" class="text">
+        申請網頁製作心得，這是我第一次製作自己的網頁，也是剛從彭彭老師那邊上完的課程所學實際運用，
+        在這次開發時體悟到class的方便性跟重要性，它可以為我省去很多的重複工作及方便管控，
+        例如重複性的code或修改及微調，可以使版面不會太雜太多東西且不用怕有沒有漏改的地方。
+    </span>
+    
+    <script>
+        console.dir(document.body);
+        let personalprofile=document.querySelector("#personalprofile");
+        let engineer=document.querySelector("#engineer");
+        let time=document.querySelector("#time");
+        let software=document.querySelector("#software");
+        let overcome=document.querySelector("#overcome");
+        let experience=document.querySelector("#experience");
+
+        function over(element){
+            element.style.color="red";
+        }
+
+        function out(element){
+            element.style.color="black";
+        }
+
+        function personal(){
+            personalprofile.style.display="block";
+            engineer.style.display="none";
+            time.style.display="none";
+            software.style.display="none";
+            overcome.style.display="none";
+            experience.style.display="none";
+            
+        }
+
+        function effort(){
+            personalprofile.style.display="none";
+            engineer.style.display="block";
+            time.style.display="none";
+            software.style.display="none";
+            overcome.style.display="none";
+            experience.style.display="none";
+        }
+        
+        function plan(){
+            personalprofile.style.display="none";
+            engineer.style.display="none";
+            time.style.display="block";
+            software.style.display="none";
+            overcome.style.display="none";
+            experience.style.display="none";
+        }
+
+        function company(){
+            personalprofile.style.display="none";
+            engineer.style.display="none";
+            time.style.display="none";
+            software.style.display="block";
+            overcome.style.display="none";
+            experience.style.display="none";
+        }
+
+        function matter(){
+            personalprofile.style.display="none";
+            engineer.style.display="none";
+            time.style.display="none";
+            software.style.display="none";
+            overcome.style.display="block";
+            experience.style.display="none";
+        }
+
+        function develop(){
+            personalprofile.style.display="none";
+            engineer.style.display="none";
+            time.style.display="none";
+            software.style.display="none";
+            overcome.style.display="none";
+            experience.style.display="block";
+        }
+    </script>
+</body>
+</html>
